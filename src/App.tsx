@@ -42,7 +42,7 @@ const App = () => {
     setEvent(null);
   }
 
-  const changeEventHandler = (text, field) => {
+  const changeEventHandler = (text: string, field: string) => {
     setEvent(prevState => ({
       ...prevState,
       [field]: text

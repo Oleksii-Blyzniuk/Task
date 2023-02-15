@@ -29,7 +29,7 @@ export const ProductCard: React.FC<Props> = ({ product, openFormHandler }) => {
         </button>
       </div>
 
-      <p className="comment">{product.comments?.map(el => el.description)}</p>
+      {/* <p className="comment">{product.comments?.map(el => el.description)}</p> */}
   </div>
   )
 }
