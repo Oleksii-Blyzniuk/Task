@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { ProductList } from "./components/ProductList";
 import './App.scss'
+import { Product } from "./types/Product";
 
 const url = 'http://localhost:5000';
 
@@ -20,7 +21,7 @@ const App = () => {
 
   const [isShowForm, setShowForm] = useState(false);
   const [method, setMethod] = useState(null)
-  const [event, setEvent] = useState(null);
+  const [event, setEvent] = useState(null || Object);
 
 
   const [events, setEvents] = useState([]);
@@ -43,7 +44,7 @@ const App = () => {
   }
 
   const changeEventHandler = (text: string, field: string) => {
-    setEvent(prevState => ({
+    setEvent((prevState: any) => ({
       ...prevState,
       [field]: text
     }))
@@ -64,9 +65,9 @@ const App = () => {
       .then(res => {
         // console.log(res);
         if (method === 'Update') {
-          setEvents(prevState => prevState.map(eventEl => eventEl.id === res.id ? res : eventEl))
+          setEvents((prevState: any) => prevState.map((eventEl: { id: any; }) => eventEl.id === res.id ? res : eventEl))
         } else {
-          setEvents(prevState => [...prevState, res]);
+          // setEvents((prevState) => [...prevState, res]);
         }
         cancelButtonHandler();
       })
@@ -85,7 +86,7 @@ const App = () => {
       .then(res => res.json())
       .then(res => {
         console.log(res);
-        setEvents(prevState => prevState.filter(eventEl => eventEl.id !== event.id))
+        setEvents(prevState => prevState.filter((eventEl: { id: any; }) => eventEl.id !== event.id))
         cancelButtonHandler()
       })
   }
