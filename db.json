@@ -1,0 +1,42 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "imageUrl": "https://www.wtfgymtalk.com/assets/camaleon_cms/image-not-found-4a963b95bf081c3ea02923dceaeb3f8085e1a654fc54840aac61a57a60903fef.png",
+      "name": "Product6",
+      "count": "56",
+      "size": {
+        "width": 200,
+        "height": 200
+      },
+      "weight": "200g",
+      "comments": [
+        {
+          "id": 3,
+          "productId": 1,
+          "description": "some text here",
+          "date": "14:00 22.08.2021"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://www.wtfgymtalk.com/assets/camaleon_cms/image-not-found-4a963b95bf081c3ea02923dceaeb3f8085e1a654fc54840aac61a57a60903fef.png",
+      "name": "Product2",
+      "count": 6,
+      "size": {
+        "width": 200,
+        "height": 200
+      },
+      "weight": "200g",
+      "comments": [
+        {
+          "id": 3,
+          "productId": 1,
+          "description": "some text here",
+          "date": "14:00 22.08.2021"
+        }
+      ]
+    }
+  ]
+}

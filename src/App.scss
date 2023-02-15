@@ -1,0 +1,58 @@
+// .page {
+//   display: grid;
+//   grid-template: auto / 1fr 400px;
+//   column-gap: 20px;
+//   min-height: 100vh;
+// }
+
+// .page-content {
+//   padding: 20px;
+// }
+
+// .sidebar {
+//   padding: 20px;
+//   border-left: 1px solid lightgray;
+// }
+
+.buttn {
+  margin-bottom: 10px;
+}
+
+.app__form {
+  width: 320px;
+    min-width: 320px;
+    background-color: #1E1F21;
+    color: #DDDDDD;
+    box-shadow: unset;
+    border-top: 1px solid #737374;
+    border-left: 1px solid #464648;
+    border-right: 1px solid #464648;
+    border-bottom: 2px solid #464648;
+    border-radius: 4px;
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.app__input {
+  padding: 4px 14px;
+  font-style: 0.85rem;
+  width: 100%;
+  border: unset;
+  background-color: #1E1F21;
+  color: #DDD;
+  outline: unset;
+  border-bottom: 1px solid #464648;
+}
+
+.app__btncontainer {
+  padding: 8px 14px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.app__removebtn {
+  background-color: #fa0202;
+  border-color: #fa0202;
+  color: #fff;
+}
